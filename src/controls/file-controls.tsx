@@ -1,7 +1,7 @@
 import {CSSProperties} from 'react'
 import './file-controls.css'
 import {DownloadIcon, FolderIcon, InfoIcon, PlusIcon} from '../icons'
-import {useTranslation, Trans} from 'react-i18next'
+import {useTranslation} from 'react-i18next'
 
 type Props = {
     onSave: () => void

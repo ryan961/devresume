@@ -1,7 +1,7 @@
 import {CSSProperties} from 'react'
 import './preview-controls.css'
 import {ZoomOutIcon, PDFIcon, ZoomInIcon} from '../icons'
-import {useTranslation, Trans} from 'react-i18next'
+import {useTranslation} from 'react-i18next'
 
 type Props = {
     zoomInDisabled: boolean
