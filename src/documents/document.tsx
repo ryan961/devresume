@@ -63,9 +63,16 @@ export function ResumeDocument({ resume }: Props) {
         <Bar theme={theme} />
         <VStack gap={theme.space[10]}>
           {basics && <BasicsSection theme={theme} basics={basics} />}
+
           {skills && Array.isArray(skills) && (
             <SkillsSection theme={theme} skills={skills} />
           )}
+
+          {education && Array.isArray(education) && (
+            <EducationSection theme={theme} education={education} />
+          )}
+
+
           {work && Array.isArray(work) && (
             <WorkSection theme={theme} work={work} />
           )}
@@ -74,9 +81,6 @@ export function ResumeDocument({ resume }: Props) {
             <ProjectsSection theme={theme} projects={projects} />
           )}
 
-          {education && Array.isArray(education) && (
-            <EducationSection theme={theme} education={education} />
-          )}
 
           {awards && Array.isArray(awards) && (
             <AwardsSection theme={theme} awards={awards} />
