@@ -37,12 +37,18 @@ type EventSectionProps = {
   title: string;
   children: ReactNode;
   theme: Theme;
+  gap?: number;
 };
 
-export function GroupedSection({ title, children, theme }: EventSectionProps) {
+export function GroupedSection({
+  title,
+  children,
+  theme,
+  gap = theme.space[7],
+}: EventSectionProps) {
   return (
     <Section theme={theme} title={title}>
-      <VStack gap={theme.space[7]}>{children}</VStack>
+      <VStack gap={gap}>{children}</VStack>
     </Section>
   );
 }

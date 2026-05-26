@@ -24,7 +24,7 @@ type Props = {
 export function SkillsSection({skills, theme}: Props) {
     const {t} = useTranslation()
     return (
-        <GroupedSection theme={theme} title={t('skills')}>
+        <GroupedSection theme={theme} title={t('skills')} gap={theme.space[6]}>
             {skills.map((skill, index) => skill && <SkillItem key={index} skill={skill} />)}
         </GroupedSection>
     )
